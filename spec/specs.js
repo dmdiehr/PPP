@@ -9,3 +9,15 @@ describe('igpayAtinlay', function(){
     expect(igpayAtinlay('standard')).to.equal('andardstay');
   });
 });
+
+describe('igpayAtinlay', function(){
+  it("when a 'u' follows a 'q' treat the 'u' as a consonant", function(){
+    expect(igpayAtinlay('squeal')).to.equal('ealsquay');
+  });
+});
+
+describe('igpayAtinlay', function(){
+  it("will 'y' as a vowel if it is not the first letter", function(){
+    expect(igpayAtinlay('psychology')).to.equal('ychologypsay');
+  });
+});
